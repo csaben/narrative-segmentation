@@ -25,6 +25,6 @@ def text_to_segments(segmenter_class: Segmenter, text: str, max_segment_length: 
 if __name__ == "__main__":
     from narrative_segmentation.segmenters.naive import NaiveSegmenter
 
-    text = "hello world with. the . megaphones."
-    segs = text_to_segments(NaiveSegmenter, text, 0)
+    text = "This is a test! Is this working? Yes... This is working. And this has no punctuation"
+    segs = text_to_segments(NaiveSegmenter, text, 30)
     print(segs)
